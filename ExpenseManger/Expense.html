@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Expense.css" />
+    <title>Expense Manager</title>
+  </head>
+  <body>
+    <div class="App">
+      <h2>Expense Manager</h2>
+      <b>Your total amount is:</b>
+      <b id="TotalAmount"></b>
+      <div class="InputDiv">
+        <div class="IncomeDiv">
+          <label htmlFor="">Income:</label
+          ><input type="text" id="incometype" value="" />
+          <br />
+          <label htmlFor="">Amount:</label
+          ><input type="text" id="incomeAmount" value="" />
+          <button class="button" onClick="TotalIncomeHandler()">Add</button>
+        </div>
+        <div class="ExpenseDiv">
+          <label htmlFor="">Expense Type</label>
+          <div class="DropDown">
+            <select name="" id="selectExpense">
+              <option value="">----Choose---</option>
+              <option value="Grocery">Grocery</option>
+              <option value="Veggies">Veggies</option>
+              <option value="Travelling">Travelling</option>
+              <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+          </div>
+          <label htmlFor="">Amount:</label
+          ><input type="text" id="ExpenseAmount" />
+          <button class="button" onClick="TotalExpenseHandler()">Add</button>
+        </div>
+      </div>
+      <div class="History">
+        <div class="IncomeHistory" id="IncomeHistory">
+          <h2>Income History</h2>
+          <div id="output"></div>
+        </div>
+        <div class="ExpenceHistory">
+          <h2>Expense History</h2>
+          <div id="ExenseHistory"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Expense.js"></script>
+</html>
