@@ -1,4 +1,10 @@
-var th = ["", "thousand", "million", "billion", "trillion"];
+var th = [
+  "",
+  "thousand",
+  "million",
+  "billion",
+  "trillion"
+];
 var dg = [
   "zero",
   "one",
@@ -36,8 +42,6 @@ var tw = [
 
 function toWords() {
   var s = document.getElementById("input").value;
-  console.log(s);
-  s = s.toString();
   s = s.replace(/[\, ]/g, "");
   var x = s.indexOf(".");
   console.log(x);

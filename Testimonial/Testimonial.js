@@ -48,14 +48,7 @@ prevBtn.addEventListener("click", () => {
   displayTestimonial();
 });
 
-function Next(){
-  console.log('hii');
-  
-  // setInterval(
-    i=(j+i+1)%j,
-    displayTestimonial()
-  // )
-}
+
 
 let displayTestimonial = () => {
   testimonialContainer.innerHTML = `

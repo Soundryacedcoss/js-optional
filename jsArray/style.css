@@ -1,0 +1,9 @@
+table{
+    border: solid black 0.2vw;
+    color: green;
+}
+th,td{
+    padding: 0.5vw 1vw;
+    font-size: 2vw;
+    text-align: center;
+}
