@@ -46,12 +46,14 @@ function toWords() {
   var x = s.indexOf(".");
   console.log(x);
   if (x == -1) x = s.length;
+  console.log(x);
   if (x > 15) document.getElementById("Output").innerHTML = "too big";
   var n = s.split("");
   var str = "";
   var sk = 0;
   console.log(x);
   for (var i = 0; i < x; i++) {
+    console.log(dg[n[i]]);
     if ((x - i) % 3 == 2) {
       if (n[i] == "1") {
         str += tn[Number(n[i + 1])] + " ";
@@ -77,6 +79,6 @@ function toWords() {
     str += "point ";
     for (var i = x + 1; i < y; i++) str += dg[n[i]] + " ";
   }
-  console.log(str);
+  document.getElementById("Output").innerHTML=str
   return str.replace(/\s+/g, " ");
 }
